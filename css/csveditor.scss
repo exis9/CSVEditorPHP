@@ -1,0 +1,172 @@
+h1 {
+	font-size: 34px;
+}
+
+body > .container, body > .container-fluid {
+	padding: 70px 15px 0;
+}
+
+#idTableCont {
+	overflow: auto;
+
+	table {
+		width: 100%;
+		td, th {
+			padding: 2px;
+			width: auto;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		a {
+			padding: 2px;
+			margin: 4px;
+			width: 22px;
+			height: 22px;
+		}
+	}
+}
+
+
+input[type="text"]:disabled {
+	background-color: #fff;
+	border: 1px solid transparent;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+
+.success {
+
+	.input-sizer {
+		border-radius: 3px;
+		display: inline-grid;
+		vertical-align: top;
+		align-items: center;
+		position: relative;
+		border: solid 1px;
+		padding: 0 .1em 0 .1em;
+		margin: 5px;
+		min-width: 40px;
+		max-width: 250px;
+		height: 28px;
+		background-color: #fff;
+		font-weight: 200;
+		font-size: 12px;
+	
+		&.stacked {
+			padding: .5em;
+			align-items: stretch;
+			
+			&::after,
+			input,
+			textarea {
+				grid-area: 2 / 1;
+			}
+		}
+	
+		&::after,
+		input,
+		textarea {
+			text-overflow: ellipsis;
+			padding: 0;
+			text-align: center;
+			max-width: 250px;
+			height: 28px;
+			width: auto;
+			min-width: 1em;
+			grid-area: 1 / 2;
+			font: inherit;
+			margin: 0;
+			resize: none;
+			background: none;
+			appearance: none;
+			border: none;
+		}
+	
+		span {
+			padding: 0;
+		}
+	
+		&::after {
+			content: attr(data-value) ' ';
+			visibility: hidden;
+			white-space: pre-wrap;
+		}
+	
+		&:focus-within {
+			$col: #2196f3;
+			outline: solid 1px $col;
+			box-shadow: 4px 4px 0px $col;
+			
+			> span { color: $col; }
+			
+			textarea:focus,
+			input:focus {
+				outline: none;
+			}
+		}
+	}
+	  
+	.input-sizer {
+		box-shadow: 4px 4px 0px #000;
+		
+		> span {
+		  text-transform: uppercase;
+		  font-size: 0.8em;
+		  font-weight: bold;
+		  text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+		}
+	}
+	
+}
+
+
+#idBtnCont {
+	a {
+		margin: 2px;
+	}
+}
+
+@media (max-width:600px) {
+	h1 {
+		font-size:25px;
+	}
+	#idTableCont {
+		table {
+			th {
+				text-align: center;
+				font-size: 11px!important;
+			}
+			td {
+				text-align: center;
+				font-size: 10px!important;
+				padding: 2px!important;
+				input[type="text"] {
+					font-size: 10px!important;
+					padding: 2px!important;
+				}
+			}
+		}
+	}
+
+	#idBtnCont {
+		a {
+			font-size: 10px;
+			margin: 0 2px 8px 2px;
+		}
+	}
+}
+
+@media (max-width:400px) {
+	#idBtnCont {
+		text-align: center;
+		a {
+			font-size: 12px;
+			width: 80%;
+		}
+	}
+}
