@@ -1,7 +1,7 @@
 # CSVEditorPHP
 2022 CSV Online Editor (PHP &amp; JavaScript)
 
-**<big>・You can create/edit/delete/download CSV on the web!</big>**
+**<h2>・You can create/edit/delete/download CSV on the web!</h2>**
 
 This is a hardfork from [CSVEditor](https://github.com/Kortforsyningen/CSVEditor).
 I improved various parts from the original CSVEditor. 
