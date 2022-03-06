@@ -24,7 +24,7 @@ You can edit anytime!
 
 ---
 
-# Localisation is verrrrrry easy!
+# Localisation is verrrrrry easy! WOW!!
 
 I prepared all used texts in one place! All you need is just modify texts in config.php.
 Currently all texts are written in Japanese, but I also prepared the English versions too in each comment, so please replace them if you prefer English or whatever other languages.
