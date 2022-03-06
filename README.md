@@ -3,7 +3,8 @@
 
 This is a hardfork from [CSVEditor](https://github.com/Kortforsyningen/CSVEditor).
 I improved various parts from the original CSVEditor. 
-(Responsive, the latest jquery supports, CSV download support, special CSV support, and so on)
+
+(Responsive supports, the latest library supports, CSV download support, special CSV supports, and so on)
 
 ---
 
