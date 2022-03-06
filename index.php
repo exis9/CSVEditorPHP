@@ -1,3 +1,6 @@
+<?php
+require_once 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +41,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li class="active"><a href="./">CSVを登録</a></li>
+              <li class="active"><a href="" id="idNewCSV"><?php echo TEXT_newCSV; ?></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -46,7 +49,6 @@
 
 <?php
 
-    require_once 'config.php';
 
 // Get array of CSV files
 $csvpath = SDFE_CSVFolder . "/";
@@ -151,31 +153,48 @@ else {
                         </tbody>
                     </table>
                 </div>
+<?php
+$cn = 'constant';
+echo<<<EOT
                 <div class="text-right">
-                    <a href="#" id="addrow" class="btn btn-default"><i class="fa fa-plus"></i> 行を追加</a>
+                    <a href="#" id="addrow" class="btn btn-default"><i class="fa fa-plus"></i> {$cn('TEXT_addLine')}</a>
                 </div>
                 <hr>
                 <div id="idBtnCont">
-                    <a href="#" id="cancel" class="btn btn-default"><i class="fa fa-undo"></i> 編集をキャンセル</a>
-                    <a href="#" id="save" class="btn btn-primary"><i class="fa fa-save"></i> 編集を保存</a>
-                    <a href="#" id="saveFile" class="btn btn-primary"><i class="fa fa-save"></i> CSVをダウンロード</a>
+                    <a href="#" id="cancel" class="btn btn-default"><i class="fa fa-undo"></i> {$cn('TEXT_editCancel')}</a>
+                    <a href="#" id="save" class="btn btn-primary"><i class="fa fa-save"></i> {$cn('TEXT_editSave')}</a>
+                    <a href="#" id="saveFile" class="btn btn-primary"><i class="fa fa-download"></i> {$cn('TEXT_downloadCSV')}</a>
+                    <a href="#" id="deleteCSV" class="btn btn-primary"><i class="fa fa-trash"></i> {$cn('TEXT_deleteCSV')}</a>
                 </div>
                 </form>
                 <div style="margin-top: 20px;" id="message">
                 </div>
-
-<?php
+EOT;
 }
 ?>
             </div>
         </div>
     </div><!-- /.container -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/exis9/Apprise_V3@latest/apprise.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/exis9/Apprise_V3@latest/apprise.min.js"></script>
     <script>
-		var g_csvfile = "<?php echo $csv;?>";
-		var g_columns = "<?php echo $columns;?>";
+		const g_csvfile = "<?php echo $csv;?>";
+		const g_columns = "<?php echo $columns;?>";
+
+		class ConstantNames_c {
+			constructor(){
+				this.inputCSVName = "<?php echo TEXT_inputCSVName;?>";
+				this.inputCSVColumns = "<?php echo TEXT_inputCSVColumns;?>";
+				this.savedCSV = "<?php echo TEXT_savedCSV;?>";
+				this.deleteConfirmCSV = "<?php echo TEXT_deleteConfirmCSV;?>";
+				this.deletedCSV = "<?php echo TEXT_deletedCSV;?>";
+				this.failDeleteCSV = "<?php echo TEXT_failDeleteCSV;?>";
+			}
+		}
+		const cn = new ConstantNames_c()
 	</script>
+	<script src="js/index.js?1"></script>
   </body>
 </html>
 <?php
