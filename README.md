@@ -8,7 +8,8 @@ I improved various parts from the original CSVEditor.
 
 (Mobile support, CSV creation & deletion supports, the latest library supports, CSV download support, special CSV supports, and so on)
 
-<img width="1403" alt="Screen Shot 2022-03-05 at 21 26 09" src="https://user-images.githubusercontent.com/91220554/156905456-087f2c7e-639b-429a-a905-81494a0bbbe7.png">
+<img width="1440" alt="Screen Shot 2022-03-06 at 15 17 16" src="https://user-images.githubusercontent.com/91220554/156938612-69071b13-c3c4-46de-93a9-a6b53d7a2ee3.png">
+
 
 ---
 
