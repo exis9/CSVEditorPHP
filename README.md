@@ -12,7 +12,7 @@ I improved various parts from the original CSVEditor.
 
 ・You always need the title columns for the 1st line in your CSV.
 
-・Please set the appropriate folder permissions such as 705, 777, 707 or whatever depends on your server setting.
+・Please set the appropriate folder permissions such as 705, 777, 707 or whatever depends on your server setting. Otherwise, saving CSV might fail.
 
 <img width="1403" alt="Screen Shot 2022-03-05 at 21 26 09" src="https://user-images.githubusercontent.com/91220554/156905456-087f2c7e-639b-429a-a905-81494a0bbbe7.png">
 
