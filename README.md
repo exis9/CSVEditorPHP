@@ -10,6 +10,9 @@ I improved various parts from the original CSVEditor.
 
 <img width="1440" alt="Screen Shot 2022-03-06 at 15 17 16" src="https://user-images.githubusercontent.com/91220554/156938612-69071b13-c3c4-46de-93a9-a6b53d7a2ee3.png">
 
+You can edit anytime!
+<img width="1078" alt="Screen Shot 2022-03-06 at 15 18 16" src="https://user-images.githubusercontent.com/91220554/156938646-b0c626d9-8a27-4c27-8b70-caee621cf693.png">
+
 
 ---
 
