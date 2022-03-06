@@ -30,3 +30,10 @@ I prepared all used texts in one place! All you need is just modify texts in con
 Currently all texts are written in Japanese, but I also prepared the English versions too in each comment, so please replace them if you prefer English or whatever other languages.
 
 <img width="914" alt="Screen Shot 2022-03-06 at 14 49 49" src="https://user-images.githubusercontent.com/91220554/156937836-0287f361-51b0-4b79-a2bd-8dfef4230fff.png">
+
+---
+
+# Installation
+
+Just download the file and put everything on your server that supports PHP! And change the folder permissions if needed.
+After that, you can open the directory on your browser! Very easy, right?
