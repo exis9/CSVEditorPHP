@@ -36,7 +36,6 @@ Currently all texts are written in Japanese, but I also prepared the English ver
 # Installation
 
 Just download the file and put everything on your server that supports PHP! 
-
-And change the folder permissions if needed.
+(change the folder permissions if needed.)
 
 After that, you can open the directory on your browser! Very easy, right?
