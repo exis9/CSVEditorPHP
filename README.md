@@ -20,6 +20,8 @@ You can edit anytime!
 
 ・You always need the title columns for the 1st line in your CSV.
 
+・Files will be saved in the csv folder.
+
 ・Please set the appropriate folder permissions such as 705, 777, 707 or whatever depends on your server setting. Otherwise, saving CSV might fail.
 
 ---
